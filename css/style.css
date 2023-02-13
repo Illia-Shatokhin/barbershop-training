@@ -1,0 +1,397 @@
+@font-face {
+    font-family: Open Sans-600;
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Open Sans-400;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: Open Sans-700;
+    src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: Raleway-700;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
+
+:root {
+    --main-font: 'Open Sans-600', 'Open Sans', sans-serif;
+    --text: #FFFFFF;
+    --text-dark: #303030;
+    --text-light: #555555;
+    --pre-title: rgba(157, 164, 189, 0.6);
+    --after-title: #9DA4BD;
+    --hover: #FF6C00;
+}
+
+body {
+    font-family: var(--main-font);
+    color: var(--text-dark);
+}
+
+.header {
+    background-color: rgba(25, 28, 38, 0.2);;
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-list {
+}
+.header-item {
+}
+
+.header-link {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.1em;
+    color: var(--text);
+}
+
+.header-tel {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.header-btn {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--after-title);
+}
+
+.hero {
+}
+.hero-list {
+}
+.hero-item {
+}
+
+.hero-link {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    color: var(--text-dark);
+}
+
+.hero-pre-title {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+    color: var(--pre-title);
+}
+
+.hero-title {
+    font-family: 'Raleway-700';
+    font-size: 72px;
+    line-height: calc(85 / 72);
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+.hero-after-title {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--after-title);
+}
+
+.about {
+}
+.about-list {
+}
+.about-item {
+}
+.about-image {
+}
+
+.about-pre-title {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+    color: var(--text-dark);
+}
+
+.about-title {
+    font-family: 'Raleway-700';
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+}
+
+.about-after-title {
+    font-family: 'Open Sans-400';
+font-size: 18px;
+line-height: calc(30 / 18);
+letter-spacing: 0.02em;
+color: var(--text-light);
+}
+
+.about-text {
+    font-family: 'Open Sans-400';
+    font-size: 14px;
+    line-height: calc(26 / 14);
+    letter-spacing: 0.02em;
+    color: var(--text-light);
+}
+
+.about-btn {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text-dark);
+}
+
+.srvice {
+}
+
+.service-pre-title {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+    color: var(--pre-title);
+}
+
+.service-title {
+    font-family: 'Raleway-700';
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+.service-list {
+}
+.service-item {
+}
+
+.service-text-service {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--after-title);
+}
+
+.service-text-price {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    text-align: right;
+    color: var(--after-title);
+}
+
+.service-btn {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.things {
+}
+.things-list {
+}
+.things-item {
+}
+
+.things-number {
+    font-family: 'Open Sans-700';
+    font-size: 42px;
+    line-height: calc(57 / 42);
+    text-align: center;
+    letter-spacing: 0.05em;
+}
+
+.things-number-text {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-align: center;
+}
+
+.things-pre-title {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+}
+
+.things-title {
+    font-family: 'Raleway-700';
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+}
+
+.things-after-title {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--text-light);
+}
+
+.barbers {
+}
+
+.barbers-pre-title {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+}
+
+.barbers-title {
+    font-family: 'Raleway-700';
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+}
+
+.barbers-list {
+}
+.barbers-item {
+}
+.barbers-image {
+}
+
+.barbers-name {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(25 / 18);
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.barbers-experience {
+    font-family: 'Open Sans-400';
+    font-size: 14px;
+    line-height: calc(19 / 14);
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--hover);
+}
+
+.barbers-media-list {
+}
+.barbers-media-item {
+}
+.barbers-media-icon {
+}
+.work {
+}
+
+.work-pre-title {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+}
+
+.work-list {
+}
+.work-item {
+}
+.work-image {
+}
+.booking {
+}
+
+.booking-title {
+    font-family: 'Raleway-700';
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+.booking-btn {
+    font-size: 12px;
+    line-height: calc(16 / 12);
+    text-align: center;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.contacts {
+}
+
+.contacts-title {
+    font-family: 'Raleway-700';
+    font-size: 42px;
+    line-height: calc(49 / 42);
+    letter-spacing: 0.05em;
+    color: var(--text);
+}
+
+.contacts-list {
+}
+.contacts-item {
+}
+
+.contacts-link {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--after-title);
+}
+
+.contacts-pre-title {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    text-transform: uppercase;
+    color: var(--text);
+}
+
+.contacts-after-title {
+    font-family: 'Open Sans-400';
+    font-size: 18px;
+    line-height: calc(30 / 18);
+    letter-spacing: 0.02em;
+    color: var(--after-title);
+}
+
+.footer {
+}
+.footer-text {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    color: var(--after-title);
+}
+.footer-list {
+}
+.footer-item {
+}
+.footer-link {
+    font-size: 11px;
+    line-height: calc(15 / 11);
+    letter-spacing: 0.2em;
+    color: var(--text-dark);
+}
+
+/* -------utilites------- */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
