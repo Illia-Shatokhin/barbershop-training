@@ -257,6 +257,7 @@ img {
 
 .srvice {
     padding: 120px 0;
+    background-color: var(--text-light);
 }
 
 .service-pre-title {
