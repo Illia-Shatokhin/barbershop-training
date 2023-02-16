@@ -27,7 +27,9 @@
     --after-title: #9DA4BD;
     --hover: #FF6C00;
     --bg-color: #F7F7F7;
+    --bg-dark-color: #111319;
     --bg-gradient: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+    --before-color: rgba(157, 164, 189, 0.6);
 }
 
 body {
@@ -165,6 +167,16 @@ img {
     line-height: calc(15 / 11);
     text-transform: uppercase;
     color: var(--pre-title);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .hero-title {
@@ -215,6 +227,16 @@ img {
     line-height: calc(15 / 11);
     text-transform: uppercase;
     color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .about-title {
@@ -262,7 +284,12 @@ img {
 
 .srvice {
     padding: 120px 0;
-    background-color: var(--text-light);
+    background-image: url(../image/bg-services.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    background-color: var(--bg-dark-color);
 }
 
 .service-pre-title {
@@ -271,6 +298,16 @@ img {
     line-height: calc(15 / 11);
     text-transform: uppercase;
     color: var(--pre-title);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.service-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .service-title {
@@ -291,15 +328,30 @@ img {
 .service-list {
     padding: 30px 20px;
     flex-basis: calc((100% - 30px) / 2);
+    background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.service-list:last-child {
+    background: linear-gradient(180deg, #090B13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
 
 .service-item {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
 }
 
 .service-item + .service-item {
     margin-top: 20px;
+}
+
+.service-item::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
 }
 
 .service-text-service {
@@ -308,6 +360,8 @@ img {
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
     color: var(--after-title);
+    flex-shrink: 0;
+    order: -1;
 }
 
 .service-text-price {
@@ -316,6 +370,7 @@ img {
     line-height: calc(30 / 18);
     letter-spacing: 0.02em;
     color: var(--after-title);
+    flex-shrink: 0;
 }
 
 .service-btn {
@@ -339,7 +394,6 @@ img {
 
 .things {
     padding: 130px 0 120px 0;
-    outline: 1px solid red;
 }
 
 .things > .container {
@@ -352,8 +406,20 @@ img {
     flex-wrap: wrap;
     gap: 30px;
 }
+
 .things-item {
-    flex-basis: calc((100% - 30px) / 2);
+    width: 170px;
+    height: 133px;
+    background-color: var(--bg-color);
+    padding: 20px 24px;
+}
+
+.things-item:nth-child(odd) {
+    margin-right: 30px;
+}
+
+.things-item:nth-child(even) {
+    margin-top: 30px;
 }
 
 .things-number {
@@ -363,11 +429,17 @@ img {
     line-height: calc(57 / 42);
     text-align: center;
     letter-spacing: 0.05em;
+    display: block;
 }
 
 .things-number-text {
     font-size: 11px;
     line-height: calc(15 / 11);
+    text-align: center;
+}
+
+.things-wrap {
+    max-width: 500px;
 }
 
 .things-pre-title {
@@ -375,6 +447,16 @@ img {
     font-size: 11px;
     line-height: calc(15 / 11);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.things-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .things-title {
@@ -405,6 +487,16 @@ img {
     font-size: 11px;
     line-height: calc(15 / 11);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.barbers-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .barbers-title {
@@ -449,10 +541,12 @@ img {
     justify-content: center;
     gap: 10px;
 }
+
 .barbers-media-item {
     width: 44px;
     height: 44px;
 }
+
 .barbers-media-link {
     display: flex;
     justify-content: center;
@@ -462,6 +556,11 @@ img {
     background-color: var(--text);
     border-radius: 50%;
 }
+
+.barbers-media-icon {
+    fill: var(--text-dark);
+}
+
 .barbers-media-link:hover .barbers-media-icon, .barbers-media-icon:focus {
     fill: var(--hover);
 }
@@ -477,6 +576,16 @@ img {
     font-size: 11px;
     line-height: calc(15 / 11);
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.work-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .work-list {
@@ -550,6 +659,16 @@ img {
     line-height: calc(15 / 11);
     text-transform: uppercase;
     color: var(--text);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts-pre-title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: currentColor;
 }
 
 .contacts-after-title {
