@@ -399,6 +399,7 @@ img {
 .things > .container {
     display: flex;
     gap: 130px;
+    padding-left: 85px;
 }
 
 .things-list {
