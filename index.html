@@ -466,30 +466,51 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>X</button>
-        <p class="modal-title">Заголовок модального вікна</p>
+        <p class="modal-title">Online-booking</p>
         <form class="modal-form">
+          <label for="user-name" class="label-text"
+            >Введіть ім'я <span class="moadl-necessarily">*</span></label
+          >
           <input
             type="text"
             class="modal-input"
+            id="user-name"
             name="user-name"
-            placeholder="Введіть ім'я"
+            placeholder="John"
             required
           />
+          <label for="user-email" class="label-text">Введіть пошту</label>
           <input
             type="email"
             class="modal-input"
             name="user-email"
-            placeholder="Введіть пошту"
+            id="user-email"
+            placeholder="John@email.com"
           />
+          <label for="user-phone" class="label-text"
+            >Введіть телефон <span class="moadl-necessarily">*</span></label
+          >
           <input
             type="tel"
             class="modal-input"
             name="user-phone"
-            placeholder="Введіть телефон"
+            id="user-phone"
+            placeholder="0505555555"
             required
           />
-          <button type="submit">Передзвоніть мені</button>
-          <button type="reset">Передумав / Передуиала</button>
+          <label for="user-comment" class="label-text">Додайте коментар</label>
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            class="modal-comment"
+            placeholder="Comment"
+          ></textarea>
+          <div class="modal-thumb">
+            <button type="submit" class="modal-btn">Передзвоніть мені</button>
+            <button type="reset" class="modal-btn">
+              Передумав / Передумала
+            </button>
+          </div>
         </form>
       </div>
     </div>
